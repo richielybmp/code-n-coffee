@@ -1,11 +1,15 @@
 const express = require('express');
+const mongoose = require('mongoose');
+const routes = require('./routes');
 
 const app = express();
 
-app.get('/', (req, res) => {
-    return res.json({ message: 'Hello' });
+mongoose.connect("mongodb+srv://omnistack:omnistack@omnistack-rutpu.mongodb.net/aircnc?retryWrites=true&w=majority", {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
 });
 
-app.listen(3333);
+app.use(express.json());
+app.use(routes);
 
-//aula 2 - 19 minutos
+app.listen(3333);
