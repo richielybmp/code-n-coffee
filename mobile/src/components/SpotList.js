@@ -46,6 +46,8 @@ function SpotList({ tech, navigation }) {
                         <TouchableOpacity style={styles.button} onPress={() => handleNavigate(item._id)}>
                             <Text style={styles.buttonText}>Solicitar reserva</Text>
                         </TouchableOpacity>
+
+
                     </View>
                 )}
             />
