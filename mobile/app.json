@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "mobile",
-    "slug": "mobile",
+    "name": "aircnc-mobile",
+    "slug": "aircnc-mobile",
     "privacy": "public",
     "sdkVersion": "36.0.0",
     "platforms": [
@@ -25,6 +25,8 @@
     ],
     "ios": {
       "supportsTablet": true
-    }
+    },
+    "description": "Semana OmniStack 9 - App mobile AirCnC",
+    "githubUrl": "https://github.com/richielybmp/aircnc/tree/master/mobile"
   }
 }
